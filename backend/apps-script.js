@@ -3,7 +3,7 @@
  */
 
 const SHEET_ID = '1Y9g65iq-ov81be3ECU4fKV8zUqP4snb9TiH7PqRZLsA';
-const SHEET_NAME = 'Waitlist';
+const SHEET_NAME = 'Piña Lab Waitlist';
 
 function doPost(e) {
   try {
