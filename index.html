@@ -105,7 +105,7 @@
   <script>
     const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwDdqIJmB7f9zAu2zvQ026OwPmNb5MqgByxENySkSXZP2VwL_9uevwIpVrxyvHzXXPe/exec';
     async function submitEmail(email, formEl, successEl) {
-      try { await fetch(SHEET_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, timestamp: new Date().toISOString() }) }); } catch (_) {}
+      try { await fetch(SHEET_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify({ email, timestamp: new Date().toISOString() }) }); } catch (_) {}
       const stored = JSON.parse(localStorage.getItem('pinalab_emails') || '[]');
       if (!stored.includes(email)) { stored.push(email); localStorage.setItem('pinalab_emails', JSON.stringify(stored)); }
       formEl.style.display = 'none';
