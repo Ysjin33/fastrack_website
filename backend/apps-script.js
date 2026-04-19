@@ -1,9 +1,9 @@
 /**
- * Piña Lab — Google Apps Script Email Collector
+ * Harvest Lab — Google Apps Script Email Collector
  */
 
 const SHEET_ID = '1Y9g65iq-ov81be3ECU4fKV8zUqP4snb9TiH7PqRZLsA';
-const SHEET_NAME = 'Piña Lab Waitlist';
+const SHEET_NAME = 'Harvest Lab Waitlist';
 
 function doPost(e) {
   try {
