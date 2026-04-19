@@ -229,7 +229,7 @@
   // ── CONFIG ────────────────────────────────────────────────────────────────
   // Paste your Google Apps Script Web App URL here.
   // Deploy → New Deployment → Web App → Execute as: Me → Anyone → Deploy
-  const SHEET_URL = 'YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyeUpGk6yGtJG4m_q5-N4qsw491Yo-mx5vZS_NyICsFdoPBgRGpN-9Ja0HScCErZrQNfA/exec';
 
   // ── WAITLIST SUBMIT ───────────────────────────────────────────────────────
   document.getElementById('waitlistForm').addEventListener('submit', async function(e) {
@@ -262,7 +262,7 @@
     payload.append('source',    'Harvest Lab Waitlist');
 
     try {
-      if (SHEET_URL === 'https://script.google.com/macros/s/AKfycbzWljiWe9KnNiC3C7sfBt3v2i5psH71AN05klb5omho3uCc8-hUlaDGfqKbhMWsyqSr4g/exec') {
+      if (SHEET_URL === 'https://script.google.com/macros/s/AKfycbyeUpGk6yGtJG4m_q5-N4qsw491Yo-mx5vZS_NyICsFdoPBgRGpN-9Ja0HScCErZrQNfA/exec') {
         // Demo mode — simulate network delay
         await new Promise(r => setTimeout(r, 1000));
       } else {
