@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tepe — Australia's Authentic Tepache brand</title>
+<title>Tepe Co — Australia's Authentic Tepache brand</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
@@ -146,7 +146,7 @@
 <div class="page">
 
   <header class="nav">
-    <div class="mark">Tepe <em>Lab</em></div>
+    <div class="mark">Tepe <em>Co</em></div>
     <div class="tag"><span class="dot"></span>Waitlist open</div>
   </header>
 
@@ -200,7 +200,7 @@
   </section>
 
   <footer class="foot">
-    <div>© Tepe · Naarm / Melbourne</div>
+    <div>© Tepe Co · Naarm / Melbourne</div>
     <div class="links">
       <a href="#">Instagram</a>
       <a href="mailto:hello@tepe.com.au">Contact</a>
@@ -212,7 +212,7 @@
 <!-- ============= TWEAKS PANEL ============= -->
 <div class="tweaks-panel" id="tweaks">
   <h6>Tweaks</h6>
-  <div class="sub">Tepe</div>
+  <div class="sub">Tepe Co</div>
   <div class="label">Palette</div>
   <div class="opts">
     <button class="opt" data-tweak="accent" data-value="sage"><span class="sw" style="background:#E8E4D2;border:1px solid #2F5236"></span> Sage</button>
@@ -252,13 +252,10 @@
     submitBtn.disabled = true;
     submitBtn.innerHTML = 'Sending\u2026';
 
-    // Send as JSON string in the request body.
-    // Your Apps Script reads: JSON.parse(e.postData.contents)
-    // Content-Type must be text/plain for no-cors — Apps Script receives the raw body fine.
     const payload = JSON.stringify({
       email:     email,
       timestamp: new Date().toISOString(),
-      source:    'Tepe Waitlist'
+      source:    'Tepe Co Waitlist'
     });
 
     try {
