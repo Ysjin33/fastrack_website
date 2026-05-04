@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Harvest Lab — Wild Fermented Soda</title>
+<title>Tepe — Australia's Authentic Tepache brand</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
 <template id="__bundler_thumbnail" data-bg-color="#F0DDA8">
   <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
     <rect width="1200" height="800" fill="#F0DDA8"/>
-    <text x="600" y="440" font-family="Georgia, serif" font-style="italic" font-size="220" font-weight="400" fill="#6B4E12" text-anchor="middle" letter-spacing="-8">Harvest Lab</text>
+    <text x="600" y="440" font-family="Georgia, serif" font-style="italic" font-size="220" font-weight="400" fill="#6B4E12" text-anchor="middle" letter-spacing="-8">Tepe</text>
     <circle cx="600" cy="560" r="5" fill="#6B4E12"/>
   </svg>
 </template>
@@ -146,7 +146,7 @@
 <div class="page">
 
   <header class="nav">
-    <div class="mark">Harvest <em>Lab</em></div>
+    <div class="mark">Tepe <em>Lab</em></div>
     <div class="tag"><span class="dot"></span>Waitlist open</div>
   </header>
 
@@ -200,10 +200,10 @@
   </section>
 
   <footer class="foot">
-    <div>© Harvest Lab · Naarm / Melbourne</div>
+    <div>© Tepe · Naarm / Melbourne</div>
     <div class="links">
       <a href="#">Instagram</a>
-      <a href="mailto:hello@harvestlab.com.au">Contact</a>
+      <a href="mailto:hello@tepe.com.au">Contact</a>
     </div>
   </footer>
 
@@ -212,7 +212,7 @@
 <!-- ============= TWEAKS PANEL ============= -->
 <div class="tweaks-panel" id="tweaks">
   <h6>Tweaks</h6>
-  <div class="sub">harvest lab</div>
+  <div class="sub">Tepe</div>
   <div class="label">Palette</div>
   <div class="opts">
     <button class="opt" data-tweak="accent" data-value="sage"><span class="sw" style="background:#E8E4D2;border:1px solid #2F5236"></span> Sage</button>
@@ -258,7 +258,7 @@
     const payload = JSON.stringify({
       email:     email,
       timestamp: new Date().toISOString(),
-      source:    'Harvest Lab Waitlist'
+      source:    'Tepe Waitlist'
     });
 
     try {
@@ -274,10 +274,10 @@
 
     // Persist locally to detect repeat signups
     try {
-      const stored = JSON.parse(localStorage.getItem('harvestlab_emails') || '[]');
+      const stored = JSON.parse(localStorage.getItem('tepe_emails') || '[]');
       if (!stored.includes(email)) {
         stored.push(email);
-        localStorage.setItem('harvestlab_emails', JSON.stringify(stored));
+        localStorage.setItem('tepe_emails', JSON.stringify(stored));
       }
     } catch (_) {}
 
